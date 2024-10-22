@@ -30,7 +30,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://portfolio-backend-nu-ashy.vercel.app/send-email", {
+      const response = await fetch("https://port-back-0k5v.onrender.com/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
