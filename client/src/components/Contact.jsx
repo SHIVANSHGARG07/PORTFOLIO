@@ -30,7 +30,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://portfolio-backend-nu-ashy.vercel.app", {
+      const response = await fetch("https://portfolio-backend-nu-ashy.vercel.app/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
