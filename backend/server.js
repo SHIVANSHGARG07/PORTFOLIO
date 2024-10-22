@@ -7,7 +7,10 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: "https://shivanshgargportfolio.vercel.app"
+    origin: "https://shivanshgargportfolio.vercel.app",
+    methods: "GET,POST,PUT,DELETE,OPTIONS", // Specify allowed methods
+    allowedHeaders: "Content-Type", // Specify allowed headers
+    credentials: true // If you need to send cookies or authentication tokens
 }));
 app.use(bodyParser.json());
 
